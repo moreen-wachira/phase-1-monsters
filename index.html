@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Monstr</title>
-    <!-- <script src='js/index.js'></script> -->
-    <script src='js/demo.js'></script>
-  </head>
-  <body>
-    <h1>Monstr Inc.</h1>
-    <div id='create-monster'></div>
-    <div id='monster-container'></div>
-    <button id="back"><=</button>
-    <button id="forward">=></button>
-  </body>
+<html>
+<head>
+    <title>Monster App</title>
+</head>
+<body>
+    <h1>Monster List</h1>
+
+    <form id="monster-form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="description" placeholder="Description">
+        <button type="submit">Create Monster</button>
+    </form>
+
+    <button id="load-monsters">Load More Monsters</button>
+
+    <div id="monster-container"></div>
+
+    <script src="script.js"></script>
+</body>
 </html>
